@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+</head>
+<body>
+    <div id="signup">
+        <h3>Sign up!</h3>
+        <form id="signupForm">
+            <label for="firstName">First name:</label>
+            <input type="text" name="firstName" id="firstName" placeholder="Enter first name" />
+            <br/>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter email" required />
+            <br/>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Enter password" maxlength="15" required />
+            <br/>
+            <label>Gender:</label>
+            <input type="radio" name="gender" id="male">Male</input>
+            <input type="radio" name="gender" id="female">Female</input>
+            <br/>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" max="60" min="0"/>
+            <br/>
+            <label for="dateOfBirth">Date of Birth:</label>
+            <input type="date" name="dateOfBirth" id="dateOfBirth"/>
+            <br/>
+            <input type="checkbox" name="agreeTerms" id="agreeTerms">Agree terms and conditions</input>
+            <br/>
+            <input type="submit" name="submitButton" id="submitButton" value="Signup"/>
+        </form>
+    </div>
+</body>
+</html>
