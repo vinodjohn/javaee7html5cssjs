@@ -1,3 +1,61 @@
+/*Select by tag*/
 h1 {
-    color: red;
+    /*Color by HTML color code*/
+    color: #3D5A7F;
+}
+
+/*Select by Id*/
+#introParagraph {
+    /*Color by name*/
+    color: blue;
+}
+
+/*Select by class*/
+.div-center{
+    margin-left: 50%;
+}
+
+.color-green{
+    /*Color by rgb value*/
+    color: rgb(34, 182, 26);
+}
+
+/*Descendant selector*/
+#imageDiv p{
+    background-color: burlywood;
+    border-top: 20px;
+    border-style: dashed;
+}
+
+div p {
+    font-family: "Courier New";
+    text-align: right;
+}
+
+/*Child selector*/
+#introDiv > p{
+    font-size: xxx-large;
+}
+
+/*Next element selector*/
+div+a{
+    margin-top: 50%;
+}
+
+/*Combined selector*/
+#linkDiv, #imageDiv, #linkDiv > p, h1 {
+    background-color: aqua;
+    margin-left: 40%;
+}
+
+/*Attribute selector*/
+[href='#']{
+    margin-right: 20%;
+
+}
+
+img {
+    padding: 50px;
+    margin: 50px;
+    border: 50px dot-dash;
 }
