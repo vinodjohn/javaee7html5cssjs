@@ -27,7 +27,19 @@
             <label for="dateOfBirth">Date of Birth:</label>
             <input type="date" name="dateOfBirth" id="dateOfBirth"/>
             <br/>
-            <input type="checkbox" name="agreeTerms" id="agreeTerms">Agree terms and conditions</input>
+            <label for="city">City</label>
+            <select name="city" id="city" required>
+                <option value="tallinn" id="tallinn">Tallinn</option>
+                <option value="tartu" id="tartu" selected>Tartu</option>
+                <option value="parnu" id="parnu" disabled>Parnu</option>
+            </select>
+            <br/>
+            <label>
+                Address
+                <textarea name="address" id="address" rows="8" cols="50"></textarea>
+            </label>
+            <br/>
+            <input type="checkbox" name="agreeTerms" id="agreeTerms" checked>Agree terms and conditions</input>
             <br/>
             <input type="submit" name="submitButton" id="submitButton" value="Signup"/>
         </form>
