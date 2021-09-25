@@ -1,0 +1,34 @@
+.absolute-position{
+    position: absolute;
+}
+
+.relative-position {
+    position: relative;
+}
+
+.hidden{
+    display: none;
+}
+
+.half-opacity{
+    opacity: revert;
+}
+
+/*Pseudo classes*/
+p:hover {
+    background-color: cornflowerblue;
+}
+
+article:first-child{
+    font-family: "Courier New";
+}
+
+a:link {
+    background-color: green;
+    color: white;
+}
+
+a:visited {
+    background-color: chocolate;
+    font-family: Algerian;
+}
