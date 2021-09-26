@@ -1,19 +1,21 @@
 //alert("This is my first JS");
 console.log("This is my first console log");
 
-var a = 15;
-var b = "15";
+let a = 15;
+const b = "15";
 
 if (a == b) {
     console.log("This is value comparison");
 }
+
+a = 10;
 
 if (a === b) {
     console.log("This is value and type comparison");
 }
 
 //Practice
-var resultArray = [];
+let resultArray = [];
 var i;
 
 for (i = 0; i < 5; i++) {
@@ -37,6 +39,8 @@ while (i <= resultArray.length) {
 
     i++;
 }
+
+let newArray = [...resultArray];
 
 //alert(resultArray);
 
@@ -85,6 +89,14 @@ logStudents(students);
 function calculateAge(yearOfBirth) {
     return 2021 - yearOfBirth;
 }
+
+//Another  way of function declaration
+var calcAge = function(yearOfBirth) {
+    return 2021 - yearOfBirth;
+}
+
+
+
 
 //Function without return value
 function logStudents(studentArray){
